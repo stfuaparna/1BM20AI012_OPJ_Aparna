@@ -1,0 +1,108 @@
+// Java program to demonstrate the various
+// methods to iterate over a string array
+
+public class GFG {
+	public static void main(String[] args)
+	{
+		String[] arr = { "Apple", "Banana", "Orange" };
+		
+		// First method
+		for (String i : arr) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		
+		// Second method
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+		
+		// Third method
+		int i = 0;
+		while (i < arr.length) {
+			System.out.print(arr[i] + " ");
+			i++;
+		}
+		System.out.println();
+	}
+}
+// Java program to perform the searching
+// operation on a string array
+
+public class GFG {
+	public static void main(String[] args)
+	{
+		String[] arr = { "Apple", "Banana", "Orange" };
+		String key = "Banana";
+		boolean flag = false;
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == key) {
+				System.out.println("Available at index "
+								+ i);
+				flag = true;
+			}
+		}
+		if (flag == false) {
+			System.out.println("Not found");
+		}
+	}
+}
+// Java program to perform the sorting
+// operation on a string array
+
+import java.util.Arrays;
+
+class GFG {
+	public static void main(String[] args)
+	{
+		String[] arr = { "Apple", "Cat", "Ball",
+						"Cartoon", "Banana", "Avocado" };
+		
+		// sorting the String array
+		Arrays.sort(arr);
+		
+		for (String i : arr) {
+			System.out.print(i + " ");
+		}
+	}
+}
+// Java program to demonstrate the
+// conversion of String array to String
+
+import java.util.Arrays;
+
+class GFG {
+	public static void main(String[] args)
+	{
+		String[] arr
+			= { "The", "quick", "brown", "fox", "jumps",
+				"over", "the", "lazy", "dog" };
+			
+		// converting to string
+		String s = Arrays.toString(arr);
+		System.out.println(s);
+	}
+}
+// Java program to demonstrate the
+// conversion of String array to String
+
+public class GFG {
+	public static void main(String[] args)
+	{
+		String[] myarr
+			= { "The", "quick", "brown", "fox", "jumps",
+				"over", "the", "lazy", "dog" };
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(myarr[0]);
+		
+		for (int i = 1; i < myarr.length; i++) {
+			sb.append(" " + myarr[i]);
+		}
+		
+		String s = sb.toString();
+		System.out.println(s);
+	}
+}
